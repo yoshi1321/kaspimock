@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+header {
+  background: #d32f2f;
+  color: white;
+  padding: 15px;
+  position: relative;
+}
+
+#backBtn {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.submenu li {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.photo-preview img {
+  width: 250px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
