@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaspi Госуслуги</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <button id="backBtn" onclick="goTo('docsMenu')">←</button>
+    <h1>Kaspi Имитация</h1>
+  </header>
+
+  <!-- Главное меню цифровых документов -->
+  <div class="screen" id="docsMenuScreen">
+    <h2>Цифровые документы</h2>
+    <ul class="submenu">
+      <li onclick="goTo('idCard')">Удостоверение личности</li>
+      <li>Паспорт гражданина РК</li>
+      <li>Справки</li>
+    </ul>
+  </div>
+
+  <!-- Вкладка: Удостоверение личности -->
+  <div class="screen" id="idCardScreen">
+    <h2>Удостоверение личности</h2>
+    <input type="file" id="photoInput" accept="image/*" />
+    <div id="photoPreview" class="photo-preview"></div>
+  </div>
+
+  <!-- Вкладка: Реквизиты -->
+  <div class="screen" id="requisitesScreen">
+    <h2>Реквизиты</h2>
+    <input type="text" placeholder="ФИО" /><br />
+    <input type="text" placeholder="ИИН" /><br />
+    <input type="text" placeholder="Банк" /><br />
+    <input type="text" placeholder="Счёт" /><br />
+  </div>
+
+  <div class="tabs">
+    <button onclick="goTo('idCard')">Удостоверение личности</button>
+    <button onclick="goTo('requisites')">Реквизиты</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
